@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#section-one {
+  height: 90vh;
+  width: 100vw;
+  background: linear-gradient(
+      223.41deg,
+      rgba(0, 0, 0, 0.16) 17.28%,
+      #000000 80.52%
+    ),
+    url(../img/programming.jpg) center center no-repeat;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+}
+
+#section-one .container {
+  display: flex;
+  align-items: center;
+}
+
+#section-one header {
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  position: fixed;
+  top: 0;
+  width: 80%;
+}
+
+#section-one header h1 {
+  font-family: "Kaushan Script";
+  cursor: pointer;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#section-one header h1 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#section-one header h1:hover {
+  transform: scale(1.1);
+}
+
+#section-one header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+#section-one header li {
+  margin-left: 50px;
+}
+
+#section-one header li a {
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 10px;
+}
+
+#section-one header li a:hover::before {
+  width: 32px;
+}
+
+#section-one header li a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  margin-right: 10px;
+  bottom: 0;
+  height: 2px;
+  transition: all 0.5s ease;
+  background-color: #fff;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.subtitle {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.name-subtitle {
+  font-weight: 600;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 72px;
+}
+
+.btn-title {
+  margin-top: 50px;
+  width: 300px;
+  height: 64px;
+  background: linear-gradient(100deg, #e352b2 0%, #e02828 100%);
+  border-radius: 16px;
+  font-size: 18px;
+  line-height: 22px;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  box-shadow: 0px 24px 32px -16px rgba(255, 46, 104, 0.25);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn-title:hover {
+  box-shadow: 0px 0px 64px -16px rgba(255, 46, 104, 0.75);
+}
