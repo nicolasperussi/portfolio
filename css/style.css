@@ -328,7 +328,7 @@ body {
 }
 
 #my-stack .container .stack-icon i {
-  font-size: 144px;
+  font-size: 248px;
   text-align: center;
   -webkit-transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -345,9 +345,9 @@ body {
 }
 
 #my-stack .container .stack-icon .language-name {
-  margin-top: 10px;
+  margin-top: 20px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 24px;
   opacity: 0;
   -webkit-transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -429,8 +429,6 @@ body {
   margin: 35px 30px;
   overflow: hidden;
   cursor: pointer;
-  -webkit-transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0)), to(#222222));
   background: linear-gradient(180deg, rgba(34, 34, 34, 0) 0%, #222222 100%);
   background-size: cover;
@@ -449,7 +447,7 @@ body {
 }
 
 #projects .projects-wrapper .project:hover {
-  background: none;
+  background: transparent;
 }
 
 #projects .projects-wrapper .project:hover .project-bg {
@@ -500,6 +498,13 @@ body {
   }
   #my-stack .container .stack-icon {
     width: 300px;
+    height: 200px;
+  }
+  #my-stack .container .stack-icon i {
+    font-size: 144px;
+  }
+  #projects .projects-wrapper .project {
+    width: 390px;
     height: 200px;
   }
 }
