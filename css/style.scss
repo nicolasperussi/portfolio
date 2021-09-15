@@ -112,29 +112,29 @@ body {
   }
 
   .container {
-    div {
+    .title-container {
       display: flex;
       flex-direction: column;
       color: white;
       justify-content: space-between;
       width: 60%;
 
-      h3 {
+      .subtitle {
         font-size: 32px;
         font-weight: 400;
         margin-bottom: 20px;
 
-        span {
+        .name-subtitle {
           font-weight: 600;
         }
       }
 
-      h1 {
+      .title {
         font-weight: 800;
         font-size: 72px;
       }
 
-      a {
+      .btn-title {
         margin-top: 50px;
         width: 300px;
         height: 64px;
@@ -156,87 +156,6 @@ body {
         &:hover {
           box-shadow: 0px 0px 64px -16px rgba(255, 46, 104, 0.75);
         }
-      }
-    }
-  }
-}
-
-#my-stack {
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-height: fit-content;
-
-    h5 {
-      font-size: 24px;
-      font-weight: 400;
-      text-align: center;
-      background: $gradient;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      width: max-content;
-    }
-
-    h1 {
-      font-size: 64px;
-      font-weight: 600;
-      text-align: center;
-      background: $gradient;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      width: max-content;
-    }
-
-    .stack {
-      padding-top: 64px;
-      padding-bottom: 32px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-evenly;
-      width: 100%;
-      flex-wrap: wrap;
-    }
-
-    .stack-icon {
-      width: 420px;
-      height: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      i {
-        font-size: 144px;
-        text-align: center;
-        transition: $defaultTransition;
-        color: #222;
-
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
-
-      .html-icon:hover {
-        color: #f06529;
-      }
-
-      .css-icon:hover {
-        color: #1f5faa;
-      }
-
-      .js-icon:hover {
-        color: #f7df1e;
-      }
-
-      .react-icon:hover {
-        color: #00d8ff;
-      }
-
-      .node-icon:hover {
-        color: #83cd29;
       }
     }
   }
@@ -279,6 +198,100 @@ body {
       .icon-about {
         width: 400px;
         height: auto;
+      }
+    }
+  }
+}
+
+#my-stack {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: fit-content;
+
+    .stack-subtitle {
+      font-size: 24px;
+      font-weight: 400;
+      text-align: center;
+      background: $gradient;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      width: max-content;
+    }
+
+    .stack-title {
+      font-size: 64px;
+      font-weight: 600;
+      text-align: center;
+      background: $gradient;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      width: max-content;
+    }
+
+    .stack {
+      padding-top: 64px;
+      padding-bottom: 32px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .stack-icon {
+      width: 420px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        font-size: 144px;
+        text-align: center;
+        transition: $defaultTransition;
+        color: #222;
+
+        &:hover {
+          transform: scale(1.1);
+
+          + .language-name {
+            opacity: 1;
+          }
+        }
+      }
+
+      .language-name {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        opacity: 0;
+        transition: $defaultTransition;
+      }
+
+      .html-icon:hover {
+        color: #f06529;
+      }
+
+      .css-icon:hover {
+        color: #1f5faa;
+      }
+
+      .js-icon:hover {
+        color: #f7df1e;
+      }
+
+      .react-icon:hover {
+        color: #00d8ff;
+      }
+
+      .node-icon:hover {
+        color: #83cd29;
       }
     }
   }
@@ -367,6 +380,45 @@ body {
 
     .selftrainer {
       background-image: url("../img/selftrainer.jpg");
+    }
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  #intro {
+    .container {
+      .title-container {
+        .title {
+          font-size: 56px;
+        }
+
+        .subtitle {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  #about-me {
+    .container {
+      .about {
+        p {
+          font-size: 20px;
+        }
+        .icon-about {
+          width: 250px;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  #my-stack {
+    .container {
+      .stack-icon {
+        width: 300px;
+        height: 200px;
+      }
     }
   }
 }

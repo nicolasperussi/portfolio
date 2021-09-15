@@ -124,7 +124,7 @@ body {
   width: 32px;
 }
 
-#intro .container div {
+#intro .container .title-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,22 +139,22 @@ body {
   width: 60%;
 }
 
-#intro .container div h3 {
+#intro .container .title-container .subtitle {
   font-size: 32px;
   font-weight: 400;
   margin-bottom: 20px;
 }
 
-#intro .container div h3 span {
+#intro .container .title-container .subtitle .name-subtitle {
   font-weight: 600;
 }
 
-#intro .container div h1 {
+#intro .container .title-container .title {
   font-weight: 800;
   font-size: 72px;
 }
 
-#intro .container div a {
+#intro .container .title-container .btn-title {
   margin-top: 50px;
   width: 300px;
   height: 64px;
@@ -182,119 +182,9 @@ body {
   text-decoration: none;
 }
 
-#intro .container div a:hover {
+#intro .container .title-container .btn-title:hover {
   -webkit-box-shadow: 0px 0px 64px -16px rgba(255, 46, 104, 0.75);
           box-shadow: 0px 0px 64px -16px rgba(255, 46, 104, 0.75);
-}
-
-#my-stack .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-}
-
-#my-stack .container h5 {
-  font-size: 24px;
-  font-weight: 400;
-  text-align: center;
-  background: linear-gradient(100deg, #e352b2 0%, #e02828 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
-#my-stack .container h1 {
-  font-size: 64px;
-  font-weight: 600;
-  text-align: center;
-  background: linear-gradient(100deg, #e352b2 0%, #e02828 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
-#my-stack .container .stack {
-  padding-top: 64px;
-  padding-bottom: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#my-stack .container .stack-icon {
-  width: 420px;
-  height: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#my-stack .container .stack-icon i {
-  font-size: 144px;
-  text-align: center;
-  -webkit-transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-  color: #222;
-}
-
-#my-stack .container .stack-icon i:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-#my-stack .container .stack-icon .html-icon:hover {
-  color: #f06529;
-}
-
-#my-stack .container .stack-icon .css-icon:hover {
-  color: #1f5faa;
-}
-
-#my-stack .container .stack-icon .js-icon:hover {
-  color: #f7df1e;
-}
-
-#my-stack .container .stack-icon .react-icon:hover {
-  color: #00d8ff;
-}
-
-#my-stack .container .stack-icon .node-icon:hover {
-  color: #83cd29;
 }
 
 #about-me .container {
@@ -353,6 +243,133 @@ body {
 #about-me .container .about .icon-about {
   width: 400px;
   height: auto;
+}
+
+#my-stack .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+
+#my-stack .container .stack-subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  background: linear-gradient(100deg, #e352b2 0%, #e02828 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+#my-stack .container .stack-title {
+  font-size: 64px;
+  font-weight: 600;
+  text-align: center;
+  background: linear-gradient(100deg, #e352b2 0%, #e02828 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+#my-stack .container .stack {
+  padding-top: 64px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#my-stack .container .stack-icon {
+  width: 420px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#my-stack .container .stack-icon i {
+  font-size: 144px;
+  text-align: center;
+  -webkit-transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  color: #222;
+}
+
+#my-stack .container .stack-icon i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#my-stack .container .stack-icon i:hover + .language-name {
+  opacity: 1;
+}
+
+#my-stack .container .stack-icon .language-name {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0;
+  -webkit-transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#my-stack .container .stack-icon .html-icon:hover {
+  color: #f06529;
+}
+
+#my-stack .container .stack-icon .css-icon:hover {
+  color: #1f5faa;
+}
+
+#my-stack .container .stack-icon .js-icon:hover {
+  color: #f7df1e;
+}
+
+#my-stack .container .stack-icon .react-icon:hover {
+  color: #00d8ff;
+}
+
+#my-stack .container .stack-icon .node-icon:hover {
+  color: #83cd29;
 }
 
 #projects .container {
@@ -464,5 +481,25 @@ body {
 
 #projects .projects-wrapper .selftrainer {
   background-image: url("../img/selftrainer.jpg");
+}
+
+@media screen and (max-width: 1366px) {
+  #intro .container .title-container .title {
+    font-size: 56px;
+  }
+  #intro .container .title-container .subtitle {
+    font-size: 24px;
+  }
+  #about-me .container .about p {
+    font-size: 20px;
+  }
+  #about-me .container .about .icon-about {
+    width: 250px;
+    height: auto;
+  }
+  #my-stack .container .stack-icon {
+    width: 300px;
+    height: 200px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
