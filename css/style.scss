@@ -434,3 +434,90 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding-bottom: 0;
+  }
+
+  #intro {
+
+    header {
+      h1 {
+        font-size: 20px;
+      }
+
+      ul {
+        display: none;
+      }
+    }
+    .container {
+      width: 100%;
+      justify-content: center;
+
+      .title-container {
+        .title {
+          font-size: 24px;
+        }
+
+        .subtitle {
+          font-size: 12px;
+        }
+      
+        .btn-title {
+          width: 100%;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  #about-me {
+    .container {
+      .about-title {
+        font-size: 32px;
+      }
+
+      .about {
+        .text-about {
+          font-size: 18px;
+          max-width: none;
+        }
+        .icon-about {
+          width: 200px;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  #my-stack {
+    .container {
+      .stack-subtitle {
+        font-size: 16px;
+      }
+      .stack-title {
+        font-size: 32px;
+      }
+      .stack {
+        padding: 0;
+      }
+      .language-name {
+        display: none;
+      }
+    }
+  }
+
+  #projects {
+    .container {
+      .projects-title {
+        font-size: 32px;
+      }
+      
+      .project {
+        max-width: 80vw;
+      }
+    }
+  }
+}

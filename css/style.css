@@ -508,4 +508,62 @@ body {
     height: 200px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding-bottom: 0;
+  }
+  #intro header h1 {
+    font-size: 20px;
+  }
+  #intro header ul {
+    display: none;
+  }
+  #intro .container {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #intro .container .title-container .title {
+    font-size: 24px;
+  }
+  #intro .container .title-container .subtitle {
+    font-size: 12px;
+  }
+  #intro .container .title-container .btn-title {
+    width: 100%;
+    font-size: 14px;
+  }
+  #about-me .container .about-title {
+    font-size: 32px;
+  }
+  #about-me .container .about .text-about {
+    font-size: 18px;
+    max-width: none;
+  }
+  #about-me .container .about .icon-about {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  #my-stack .container .stack-subtitle {
+    font-size: 16px;
+  }
+  #my-stack .container .stack-title {
+    font-size: 32px;
+  }
+  #my-stack .container .stack {
+    padding: 0;
+  }
+  #my-stack .container .language-name {
+    display: none;
+  }
+  #projects .container .projects-title {
+    font-size: 32px;
+  }
+  #projects .container .project {
+    max-width: 80vw;
+  }
+}
 /*# sourceMappingURL=style.css.map */
